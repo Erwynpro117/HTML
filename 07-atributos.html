@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos en HTML</title>
+</head>
+<body>
+    <h1>Atributos en HTML</h1>
+    <p>Los atributos en html son propiedades que se añaden a las etiquetas para proporcionar informacion o controlar su comportamiento  </p>
+    <p>Los atributos siempre estan presentes dentro de la etiqueta de apertura y se componen de un nombre y un valor.</p>
+
+    <!-- 
+    
+    Sintaxis:
+
+    <etiqueta aributo="valor>...</etiqueta>"
+    
+    -->
+
+    <!-- 
+    
+    Atributo src
+
+    Especifica la url de un recurso coo imagen audio o video.
+
+    Se usan en las etiquetas como: <img>, <audio>, <video>, <iframe>
+
+    Se debe definir la ubicancion del archivo que se va a mostrar o cargar.
+    
+    -->
+
+    <img src="./Perfil lol.png" alt="" />
+
+    <video src="./video.mp4"></video>
+
+    <audio src="./audio.mp3"></audio>
+
+    <iframe src="./Logo personal.png" frameborder="0"></iframe>
+
+    <!-- 
+    
+    2.alt=""
+
+    Proporciona un texto alternativo para cuando una imagen no se puede mostrar.
+
+    Esto es para volver accesibles las imagenes a los usuarios con discapacidades visuales.    
+    -->
+
+    <img src="./unaimagen.png" alt="Este es un mensaje que describe la imagen no cargada.">
+
+    <!-- 
+    
+    3.target=""
+
+    Dedine donde se abrira un enlace.
+
+    _blank se abra una pestaña nueva
+    _self se abre en la misma pestaña (valor por desfecto)
+    
+    -->
+
+    <a href="https://instragram.com"target="_blank">Sigueme en instagram</a>
+
+    <!-- 
+    
+    4.rel=""
+
+    Espesifica la relacion entre el documento actual y un recurso anlazado
+    
+    -->
+
+    <link rel="stylesheet" href="./style.css">
+
+    <a href="https://www.google.com"rel="nofollow"></a>
+
+    <script rel="javascript"> let mensaje = "Hola mundo";console.log(mensaje); </script>
+
+    <!-- 
+    
+    5. style=""
+
+    Funciona para definir estilos CSS en linea directamente en la etiqueta...
+
+    Aplique estilos a un elemento directamente. No es recomendable usarlo mucho, lo recomendable es usar hojas de estilo.
+
+    Se puede pasar a la mayoria de las etiquetas
+
+    -->
+
+    <p style="color:white; font-size:56px" >  Texto de color blanquito! </p>
+
+    <!-- 
+    
+    6. id=""
+
+    Definir un identificador unico para una etiqueta.
+
+    Funcionan para cualquier etiquetay se utilizan para enlazar un elemento con una hoja de estilos o con javascript.
+
+    El valor de id nosotros lo definimos.
+    
+    -->
+
+    <button id="miBoton">Pikale aqui!</button>
+
+    <script rel="javascript">
+        const boton = document.getElementById("miBoton");
+        boton.addEventListener("click", mensaje);
+
+        function mensaje() [
+            alert("Ya casi terminamos")
+        ]
+    </script>
+
+</body>
+</html>
